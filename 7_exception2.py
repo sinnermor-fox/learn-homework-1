@@ -26,7 +26,7 @@ def discounted(price, discount, max_discount=20):
         else:
             return price - (price * discount / 100)
     except (TypeError, ValueError):
-        return  'Вы передали неверный тип'
+        return 'Вы передали неверный тип'
 
 
 if __name__ == "__main__":
