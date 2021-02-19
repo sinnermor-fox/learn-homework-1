@@ -15,12 +15,28 @@
 
 """
 
+def checker_string(str1, str2):
+    if isinstance(str1, str) and isinstance(str1, str):
+        if str1 == str2:
+            return 1
+        elif len(str1) > len(str2):
+            return 2
+        elif str2 == 'learn':
+            return 3
+        else:
+            return 'Нет значения для такого набора'
+    else:
+        return 0
+
+
 def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
+    print(checker_string('MYA', 'MYA'))
+    print(checker_string('MYA1', 'MYA'))
+    print(checker_string('MYA1', 'MYA2'))
+    print(checker_string('MYA1', 'learn'))
+    print(checker_string(1, 2))
+
+
     
 if __name__ == "__main__":
     main()
